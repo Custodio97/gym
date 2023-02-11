@@ -1,0 +1,29 @@
+.numeros{
+    padding-top: 160px;
+    padding-bottom: 160px;
+    background-color: #fd7e14;
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+
+.numeros .counter-container{
+    width: 100%;
+    padding: 5rem;
+    color: #fff;
+    text-align: center;
+}
+
+.numeros .counter-container i{
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+.numeros .counter-container h1 {
+    font-size: 3rem;
+}
+@media (min-width: 920px) {
+    .numeros{
+        grid-template-columns: repeat(3,1fr);
+    }
+}

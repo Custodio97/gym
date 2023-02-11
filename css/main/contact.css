@@ -1,0 +1,42 @@
+#contact{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    
+}
+
+#contact form{
+    padding: 1rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns:1fr;
+    gap: 30px;
+}
+
+#contact form input{
+ width: 100%;
+ padding: 1rem;
+ border: 1px solid #ccc;
+}
+
+#contact form textarea{
+    width: 100%;
+    height: 260px;
+    outline: none;
+   
+}
+
+
+#contact button{
+    padding: .80rem;
+    border-radius:5px;
+    background-color: #00171F;
+    color: #fff;
+
+}
+
+@media (min-width:920px) {
+    #contact form{
+        width: 800px;
+        margin: auto;
+    }
+}

@@ -1,0 +1,128 @@
+/*header and navbar*/
+header{
+    width: 100%;
+    height: 90px;
+    background-color: #161515;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    position: relative;
+    z-index: 500;
+}
+
+.logo a{
+    font-size: 2rem;
+    color: #fff;
+}
+
+nav{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.navbar{
+  width: 260px;
+  height: 100vh;
+  background-color: #161515;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  right: 0;
+  gap: 30px;
+  opacity: 0;
+z-index: 500;
+}
+.navbar.active{
+  opacity: 1;
+}
+
+.navbar li a{
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+/*header toggle*/
+
+.toggle{
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    margin: 25px;
+    cursor: pointer;
+    z-index: 500;
+}
+
+.toggle span{
+    margin: 0 auto;
+    position: relative;
+    top: 12px;
+    transition-duration: 0s;
+    transition-delay: .2s;
+    transition: background-color 0.3s;
+}
+
+.toggle span::before , .toggle span::after{
+    position: absolute;
+    content: '';
+}
+
+.toggle span, .toggle span::before , .toggle span::after{
+  width: 40px;
+  height: 6px;
+  background-color: #fff;
+  display: block;
+  opacity: 1;
+}
+
+.toggle span::before{
+    margin-top: -12px;
+    transition-property: margin, transform;
+    transition-duration: .2s;
+    transition-delay: .2s, 0;
+}
+.toggle span::after {
+    margin-top: 12px;
+    transition-property: margin, transform;
+    transition-duration: .2s;
+    transition-delay: .2s, 0;
+}
+.toggle.active span{
+    background-color: rgba(0,0,0,0);
+    transition: 0.3s background-color;
+}
+
+.toggle.active span::before{
+    margin-top: 0;
+    transform: rotate(45deg);
+    transition-delay:0, .2s;
+}
+
+.toggle.active span::after {
+    margin-top: 0;
+    transform: rotate(-45deg);
+    transition-delay: 0, .2s;
+}
+
+
+
+
+@media (min-width: 920px){
+    .toggle{
+        display: none;
+    }
+    .navbar{
+        position: relative;
+       opacity: 1;
+       flex-direction: row;
+       gap: 50px;
+       opacity: 1;
+       width: 100%;
+       height: 9px;
+       background-color: transparent;
+    }
+}

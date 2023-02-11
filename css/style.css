@@ -1,0 +1,15 @@
+@import "reset/reset.css";
+@import "header/header.css";
+/*main*/
+@import "main/hero.css";
+@import "main/hero.css";
+@import "main/time.css";
+@import "main/about.css";
+@import "main/classes.css";
+@import "main/number.css";
+@import "main/contact.css";
+@import "main/footer.css";
+/*animation scroll*/
+
+@import "animation/scroll.css";
+

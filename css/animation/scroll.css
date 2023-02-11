@@ -1,0 +1,12 @@
+[data-scroll-anime]{
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity, transform ease-in-out;
+    transition-duration: .8s;
+}
+
+[data-scroll-anime].active{
+    opacity: 1;
+    transform: translateX(0);
+}
+
